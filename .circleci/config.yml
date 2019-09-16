@@ -15,4 +15,5 @@ jobs:
          dh-systemd libz-dev
 
     # build the application image
-     - run: cd buster && dpkg-buildpackage -b -uc -us
+     - run: |
+        cd buster && dpkg-buildpackage -b -uc -us
